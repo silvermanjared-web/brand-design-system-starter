@@ -2,7 +2,7 @@
 
 A portable starter system for translating brand context into usable design tokens, foundations, components, and AI-assisted front-end handoff.
 
-This repo is the polished design-system layer that was previously buried inside the profile repo. It is now structured as a standalone public asset: tokens, foundations, component specs, asset conventions, validation scripts, and Claude-ready handoff notes.
+This repo is a standalone starter system. It is not a migration of the older `brand-design-system/` folder that still exists inside the profile README repo. That older folder is retained as an archived reference. This repo uses its own starter palette and structure so the public source of truth is explicit rather than implied.
 
 ## What this repo is
 
@@ -11,6 +11,17 @@ This is not a full production design system. It is a lightweight, portable start
 It gives a team or AI agent enough structure to move from brand direction to repeatable front-end implementation without starting from a blank page.
 
 The goal is simple: make brand execution more consistent, reusable, and reviewable.
+
+## Canonical source of truth
+
+For this repo, the canonical source of truth is:
+
+- `design-tokens/tokens.json` for token values and token metadata
+- `design-tokens/tokens.css` for generated CSS custom properties
+- `foundations/` for usage guidance
+- `components/` for component-level implementation guidance
+
+The navy, amber, and teal palette in this repo is an example starter palette aligned to an editorial/operator identity. It should not be treated as the canonical token set for every Jared Silverman web property or for the older embedded profile-repo design-system folder.
 
 ## System flow
 
@@ -66,15 +77,7 @@ Together, they show a repeatable tactic: convert scattered brand and design mate
 
 ## Quick start
 
-Install dependencies only if you want to run the local helper scripts.
-
-```bash
-npm install
-npm run tokens:css
-npm run check
-```
-
-The repo is intentionally simple. You can also use it without installing anything by reading the Markdown files and copying the token JSON/CSS patterns into another project.
+The repo can be used directly by reading the Markdown files and copying the token JSON/CSS patterns into another project. Local helper scripts are available for regenerating CSS variables from source tokens and validating the expected repo structure.
 
 ## Token workflow
 
@@ -112,6 +115,10 @@ This repo is useful for:
 - marketers using AI tools for design and front-end acceleration
 - engineers needing lightweight brand implementation rules
 - consultants packaging a client brand into a repeatable build system
+
+## Licensing and reuse
+
+This repo is public for professional review and portfolio context. The package is intentionally marked `private` and `UNLICENSED`, which means it is not published as a package and is not offered as open-source software for reuse without permission.
 
 ## What this demonstrates
 
