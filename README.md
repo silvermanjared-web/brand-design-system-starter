@@ -120,6 +120,8 @@ This repo is useful for:
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
 
+Shared terminology: [Common Language](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/common-language.md).
+
 - [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
 - [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system)
 
