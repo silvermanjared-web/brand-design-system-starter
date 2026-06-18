@@ -1,0 +1,19 @@
+{
+  "name": "brand-design-system-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portable brand design system starter with tokens, foundations, components, and AI handoff notes.",
+  "scripts": {
+    "tokens:css": "node scripts/build-css-tokens.js",
+    "check": "node scripts/validate-structure.js"
+  },
+  "keywords": [
+    "design-system",
+    "brand",
+    "tokens",
+    "figma",
+    "frontend",
+    "ai-handoff"
+  ],
+  "license": "UNLICENSED"
+}
