@@ -1,0 +1,4 @@
+path,type,status,notes
+assets/logos/,logos,placeholder,Add public-safe logos only
+assets/fonts/,fonts,placeholder,Do not commit paid font files unless licensed for public distribution
+assets/icons/,icons,placeholder,Use open or owned icons only
