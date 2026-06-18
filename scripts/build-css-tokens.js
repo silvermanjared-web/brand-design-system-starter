@@ -36,3 +36,5 @@ lines.push('}');
 fs.writeFileSync(output, lines.join('\n') + '\n');
 
 console.log(`Wrote ${output}`);
+npm run tokens:css
+npm run check
