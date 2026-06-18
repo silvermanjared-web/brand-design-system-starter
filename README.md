@@ -42,6 +42,14 @@ A good prompt is not enough. The system needs:
 
 This repo packages those pieces into one place so collaborators and AI tools can produce more consistent work.
 
+## How this fits into the Growth Architecture ecosystem
+
+`brand-context-system` is the intake layer: it organizes raw brand inputs, Figma references, assets, web examples, and working notes.
+
+`brand-design-system-starter` is the implementation layer: it turns that context into tokens, foundations, component guidance, CSS variables, and AI-ready front-end handoff.
+
+Together, they show a repeatable tactic: convert scattered brand and design material into an operating system that humans and AI tools can use consistently.
+
 ## Repo map
 
 | Path | Purpose |
@@ -51,6 +59,7 @@ This repo packages those pieces into one place so collaborators and AI tools can
 | `components/` | Component-level specs for common UI patterns |
 | `assets/` | Placeholder structure for logos, fonts, icons, and image assets |
 | `scripts/` | Utility scripts for token generation and structure validation |
+| `examples/` | Example token output and component-spec patterns |
 | `docs/` | Wiki copy, release notes, metadata, and implementation guidance |
 | `CLAUDE.md` | AI handoff instructions for Claude or similar tools |
 | `SECURITY.md` | Public-safe reporting and data-handling policy |
@@ -77,6 +86,11 @@ flowchart LR
     Source --> Review[Design review]
     Review --> Source
 ```
+
+## Example output
+
+- [`examples/example-token-output.css`](examples/example-token-output.css) shows the token output shape in CSS.
+- [`examples/example-component-spec.md`](examples/example-component-spec.md) shows how component guidance should be written.
 
 ## What good looks like
 
