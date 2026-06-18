@@ -1,0 +1,35 @@
+:root {
+  --color-brand-navy: #0F1C2E;
+  --color-brand-amber: #E8A020;
+  --color-brand-teal: #0E8A7C;
+  --color-brand-slate: #1A2942;
+  --color-text-primary: #E8ECF1;
+  --color-text-muted: #8A94A0;
+  --color-border-default: #2A3A52;
+
+  --font-family-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --space-lg: 1.5rem;
+  --radius-lg: 1rem;
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.brand-card {
+  background: var(--color-brand-slate);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  padding: var(--space-lg);
+}
+
+.brand-card__eyebrow {
+  color: var(--color-brand-amber);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brand-card__body {
+  color: var(--color-text-muted);
+}
