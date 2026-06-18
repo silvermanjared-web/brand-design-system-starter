@@ -118,8 +118,10 @@ This repo is useful for:
 
 ## Related repos
 
-- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os) — the operating-system hub that explains the broader portfolio architecture.
-- [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system) — the intake layer that gathers brand rules, voice, code references, Figma notes, assets, examples, and prompts.
+This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
+
+- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
+- [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system)
 
 ## Licensing and reuse
 
