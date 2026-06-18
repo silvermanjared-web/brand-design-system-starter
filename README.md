@@ -116,6 +116,11 @@ This repo is useful for:
 - engineers needing lightweight brand implementation rules
 - consultants packaging a client brand into a repeatable build system
 
+## Related repos
+
+- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os) — the operating-system hub that explains the broader portfolio architecture.
+- [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system) — the intake layer that gathers brand rules, voice, code references, Figma notes, assets, examples, and prompts.
+
 ## Licensing and reuse
 
 This repo is public for professional review and portfolio context. The package is intentionally marked `private` and `UNLICENSED`, which means it is not published as a package and is not offered as open-source software for reuse without permission.
