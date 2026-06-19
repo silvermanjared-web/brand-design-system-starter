@@ -1,4 +1,4 @@
-# Usage
+# Usage and Rights
 
 This repository is public for portfolio review.
 
