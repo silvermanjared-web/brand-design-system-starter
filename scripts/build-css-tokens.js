@@ -5,18 +5,18 @@ const source = path.join(__dirname, '..', 'design-tokens', 'tokens.json');
 const output = path.join(__dirname, '..', 'design-tokens', 'tokens.css');
 const tokens = JSON.parse(fs.readFileSync(source, 'utf8'));
 
+const cssTypes = new Set(['color', 'dimension', 'fontFamily', 'fontWeight', 'borderRadius', 'shadow']);
+
 function flatten(node, prefix = []) {
   const rows = [];
 
   for (const key of Object.keys(node)) {
     const value = node[key];
 
-    if (
-      value &&
-      typeof value === 'object' &&
-      Object.prototype.hasOwnProperty.call(value, 'value')
-    ) {
-      rows.push([`--${[...prefix, key].join('-')}`, value.value]);
+    if (value && typeof value === 'object' && Object.prototype.hasOwnProperty.call(value, 'value')) {
+      if (cssTypes.has(value.type)) {
+        rows.push([`--${[...prefix, key].join('-')}`, value.value]);
+      }
     } else if (value && typeof value === 'object') {
       rows.push(...flatten(value, [...prefix, key]));
     }
