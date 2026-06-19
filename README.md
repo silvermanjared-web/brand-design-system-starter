@@ -70,7 +70,7 @@ Together, they show a repeatable tactic: convert scattered brand and design mate
 | `components/` | Component-level specs for common UI patterns |
 | `assets/` | Placeholder structure for logos, fonts, icons, and image assets |
 | `scripts/` | Utility scripts for token generation and structure validation |
-| `examples/` | Example token output and component-spec patterns |
+| `examples/` | Minimal token sample and component-spec pattern |
 | `docs/` | Wiki copy, release notes, metadata, and implementation guidance |
 | `CLAUDE.md` | AI handoff instructions for Claude or similar tools |
 | `SECURITY.md` | Public-safe reporting and data-handling policy |
@@ -92,7 +92,8 @@ flowchart LR
 
 ## Example output
 
-- [`examples/example-token-output.css`](examples/example-token-output.css) shows the token output shape in CSS.
+- [`design-tokens/tokens.css`](design-tokens/tokens.css) is the canonical generated CSS output.
+- [`examples/example-token-output.css`](examples/example-token-output.css) is a minimal illustrative sample, not a duplicate of the generated file.
 - [`examples/example-component-spec.md`](examples/example-component-spec.md) shows how component guidance should be written.
 
 ## What good looks like
