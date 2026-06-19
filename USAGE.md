@@ -1,6 +1,6 @@
 # Usage and Rights
 
-This repository is public for portfolio review.
+This repository is public for professional review and portfolio context.
 
 Copyright 2026 Jared Silverman. All rights reserved.
 
@@ -8,6 +8,6 @@ This repository is not open source.
 
 Viewing and linking are allowed.
 
-Copying, redistribution, resale, or use in another work requires written permission.
+Reuse requires written permission.
 
 Examples are for demonstration only.
