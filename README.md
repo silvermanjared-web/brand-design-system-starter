@@ -130,6 +130,8 @@ Shared terminology: [Common Language](https://github.com/silvermanjared-web/grow
 
 This repo is public for professional review and portfolio context. The package is intentionally marked `private` and `UNLICENSED`, which means it is not published as a package and is not offered as open-source software for reuse without permission.
 
+Usage and rights: see [USAGE.md](USAGE.md).
+
 ## What this demonstrates
 
 This repo shows a practical tactic I use often: turn scattered brand, design, and front-end context into a structured operating layer that can be reused by humans and AI tools.
