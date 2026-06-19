@@ -1,7 +1,4 @@
 :root {
-  --brand-name: Brand Design System Starter;
-  --brand-voice: Clear, structured, practical, modern, and implementation-ready.;
-  --brand-provenance: Standalone starter palette and token structure. Not a migration of the older profile-repo brand-design-system folder.;
   --color-brand-navy: #0F1C2E;
   --color-brand-amber: #E8A020;
   --color-brand-teal: #0E8A7C;
@@ -10,7 +7,7 @@
   --color-text-muted: #8A94A0;
   --color-text-inverse: #0F1C2E;
   --color-border-default: #2A3A52;
-  --font-family-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
