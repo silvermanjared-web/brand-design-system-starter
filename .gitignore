@@ -34,3 +34,26 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Phase 16 push-readiness hardening
+
+# Local secrets and credentials
+!.env.example
+.env.keys
+*.pem
+*.key
+client_secret*.json
+credentials*.json
+token*.json
+tokens*.json
+google-ads.yaml
+google_ads.yaml
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor noise
