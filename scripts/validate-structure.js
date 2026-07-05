@@ -30,6 +30,7 @@ const required = [
 ];
 
 const cssTypes = new Set(['color', 'dimension', 'fontFamily', 'fontWeight', 'borderRadius', 'shadow']);
+const allowedAssetStatuses = new Set(['placeholder']);
 
 let failed = false;
 
@@ -112,6 +113,23 @@ if (
   const example = read('examples/example-token-output.css').trim();
   if (generated === example) {
     fail('example-token-output.css duplicates design-tokens/tokens.css.');
+  }
+}
+
+if (fs.existsSync(path.join(repoRoot, 'assets/manifest.csv'))) {
+  const rows = read('assets/manifest.csv').trim().split('\n').slice(1);
+  for (const row of rows) {
+    const [assetPath, type, status] = row.split(',');
+    if (!assetPath || !type || !status) {
+      fail(`Malformed asset manifest row: ${row}`);
+      continue;
+    }
+    if (!allowedAssetStatuses.has(status)) {
+      fail(`Unsupported asset manifest status for ${assetPath}: ${status}`);
+    }
+    if (!fs.existsSync(path.join(repoRoot, assetPath))) {
+      fail(`Asset manifest path does not exist: ${assetPath}`);
+    }
   }
 }
 

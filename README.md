@@ -79,6 +79,8 @@ Together, they show a repeatable tactic: convert scattered brand and design mate
 
 The repo can be used directly by reading the Markdown files and copying the token JSON/CSS patterns into another project. Local helper scripts are available for regenerating CSS variables from source tokens and validating the expected repo structure.
 
+Use `npm run check` for read-only structure and token-drift validation. Use `npm run tokens:css` only when you intend to rewrite `design-tokens/tokens.css` from `design-tokens/tokens.json`.
+
 ## Token workflow
 
 ```mermaid

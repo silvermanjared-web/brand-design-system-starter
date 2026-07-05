@@ -22,3 +22,6 @@ jobs:
 
       - name: Run structure and token drift checks
         run: npm run check
+
+      - name: Run repository guardrail
+        run: python3 scripts/validate_repo.py
