@@ -34,3 +34,9 @@ Do not commit:
 ## Intended use
 
 This repo is intended to demonstrate design-system structure, token thinking, component documentation, and AI handoff patterns. It is not a place to store confidential brand or client materials.
+
+## Branch Protection
+
+Main branch force-push and deletion protection is enforced via GitHub branch
+protection rules. Direct pushes to main are blocked; all changes require a
+pull request with passing CI.
