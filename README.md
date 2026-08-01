@@ -2,6 +2,10 @@
 
 A portable starter system for translating brand context into usable design tokens, foundations, components, and AI-assisted front-end handoff.
 
+## Role in the growth system
+
+Brand systems are execution infrastructure: consistent tokens reduce creative iteration time, design-to-development handoff errors, and campaign asset production overhead. This starter turns approved brand direction into reusable implementation rules so landing pages and campaign experiences do not restart from zero. It supports the broader growth architecture by making brand-consistent execution faster and easier to govern. Part of the [Jared Silverman growth portfolio](https://github.com/silvermanjared-web).
+
 This repo is a standalone starter system. It is not a migration of the older `brand-design-system/` folder that still exists inside the profile README repo. That older folder is retained as an archived reference. This repo uses its own starter palette and structure so the public source of truth is explicit rather than implied.
 
 ## What this repo is
@@ -139,3 +143,5 @@ Usage and rights: see [USAGE.md](USAGE.md).
 This repo shows a practical tactic I use often: turn scattered brand, design, and front-end context into a structured operating layer that can be reused by humans and AI tools.
 
 It is not just storage. It is a system for making brand-consistent execution easier.
+
+Part of the [Jared Silverman growth portfolio](https://github.com/silvermanjared-web) — see also [Brand Context System](https://github.com/silvermanjared-web/brand-context-system) for the intake layer.
