@@ -127,10 +127,13 @@ This repo is useful for:
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
 
+This repository turns approved brand direction into reusable implementation rules. The [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate) governs a different handoff: turning private canonical work into a reviewed public derivative through privacy scanning, explicit exclusions, and drift checks. Together they show that both design handoff and publication handoff need controlled boundaries; this repository is not claimed to be generated from private source.
+
 Shared terminology: [Common Language](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/common-language.md).
 
 - [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
 - [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system)
+- [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate)
 
 ## Licensing and reuse
 
