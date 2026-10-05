@@ -1,150 +1,45 @@
 # Brand Design System Starter
 
-A portable starter system for translating brand context into usable design tokens, foundations, components, and AI-assisted front-end handoff.
+> **Historical reference.** The active public context-to-design workflow now lives in [AI Context & Design System](https://github.com/silvermanjared-web/brand-context-system).
 
-## Role in the growth system
+This repository is retained to preserve the earlier standalone implementation layer: design tokens, foundations, component guidance, CSS variables, and AI-assisted front-end handoff.
 
-Brand systems are execution infrastructure: consistent tokens reduce creative iteration time, design-to-development handoff errors, and campaign asset production overhead. This starter turns approved brand direction into reusable implementation rules so landing pages and campaign experiences do not restart from zero. It supports the broader growth architecture by making brand-consistent execution faster and easier to govern. Part of the [Jared Silverman growth portfolio](https://github.com/silvermanjared-web).
+It is no longer the preferred entry point for the portfolio because the context and implementation layers have been combined into one end-to-end system.
 
-This repo is a standalone starter system. It is not a migration of the older `brand-design-system/` folder that still exists inside the profile README repo. That older folder is retained as an archived reference. This repo uses its own starter palette and structure so the public source of truth is explicit rather than implied.
+## Why it remains public
 
-## What this repo is
+The repository still demonstrates a useful earlier pattern:
 
-This is not a full production design system. It is a lightweight, portable starter kit for building one.
+- canonical design tokens;
+- generated CSS variables;
+- component-level implementation guidance;
+- accessibility and foundation documentation;
+- AI handoff instructions;
+- deterministic structure validation.
 
-It gives a team or AI agent enough structure to move from brand direction to repeatable front-end implementation without starting from a blank page.
+## Current source of truth
 
-The goal is simple: make brand execution more consistent, reusable, and reviewable.
-
-## Canonical source of truth
-
-For this repo, the canonical source of truth is:
-
-- `design-tokens/tokens.json` for token values and token metadata
-- `design-tokens/tokens.css` for generated CSS custom properties
-- `foundations/` for usage guidance
-- `components/` for component-level implementation guidance
-
-The navy, amber, and teal palette in this repo is an example starter palette aligned to an editorial/operator identity. It should not be treated as the canonical token set for every Jared Silverman web property or for the older embedded profile-repo design-system folder.
-
-## System flow
-
-```mermaid
-flowchart TD
-    Brand[Brand strategy and voice] --> Tokens[Design tokens]
-    Tokens --> Foundations[Foundations: color, type, spacing]
-    Foundations --> Components[Reusable component specs]
-    Components --> CSS[Generated CSS variables]
-    Components --> Handoff[AI and front-end handoff]
-    Assets[Logos, fonts, icons] --> Handoff
-    Handoff --> Review[Human review]
-    Review --> Implementation[Consistent branded front-end work]
-```
-
-## Why this exists
-
-AI-assisted design and front-end work fails when the context is vague.
-
-A good prompt is not enough. The system needs:
-
-- brand rules
-- design tokens
-- component expectations
-- front-end conventions
-- asset manifests
-- review criteria
-- reusable handoff notes
-
-This repo packages those pieces into one place so collaborators and AI tools can produce more consistent work.
-
-## How this fits into the Growth Architecture ecosystem
-
-`brand-context-system` is the intake layer: it organizes raw brand inputs, Figma references, assets, web examples, and working notes.
-
-`brand-design-system-starter` is the implementation layer: it turns that context into tokens, foundations, component guidance, CSS variables, and AI-ready front-end handoff.
-
-Together, they show a repeatable tactic: convert scattered brand and design material into an operating system that humans and AI tools can use consistently.
-
-## Repo map
-
-| Path | Purpose |
-|---|---|
-| `design-tokens/` | Source tokens and generated CSS variables |
-| `foundations/` | Brand foundations for color, type, spacing, accessibility, and layout |
-| `components/` | Component-level specs for common UI patterns |
-| `assets/` | Placeholder structure for logos, fonts, icons, and image assets |
-| `scripts/` | Utility scripts for token generation and structure validation |
-| `examples/` | Minimal token sample and component-spec pattern |
-| `docs/` | Wiki copy, release notes, metadata, and implementation guidance |
-| `CLAUDE.md` | AI handoff instructions for Claude or similar tools |
-| `SECURITY.md` | Public-safe reporting and data-handling policy |
-
-## Quick start
-
-The repo can be used directly by reading the Markdown files and copying the token JSON/CSS patterns into another project. Local helper scripts are available for regenerating CSS variables from source tokens and validating the expected repo structure.
-
-Use `npm run check` for read-only structure and token-drift validation. Use `npm run tokens:css` only when you intend to rewrite `design-tokens/tokens.css` from `design-tokens/tokens.json`.
-
-## Token workflow
+Use [AI Context & Design System](https://github.com/silvermanjared-web/brand-context-system) for the active workflow:
 
 ```mermaid
 flowchart LR
-    Source[design-tokens/tokens.json] --> Build[scripts/build-css-tokens.js]
-    Build --> CSS[design-tokens/tokens.css]
-    CSS --> Frontend[Frontend implementation]
-    Source --> Review[Design review]
-    Review --> Source
+    Context[Structured source context] --> Extract[AI-assisted extraction]
+    Extract --> Review[Human review]
+    Review --> Tokens[Canonical tokens]
+    Tokens --> CSS[Generated CSS]
+    Review --> Components[Component contracts]
 ```
 
-## Example output
+The combined repository now owns context, extraction, implementation, validation, governance, and handoff in one place.
 
-- [`design-tokens/tokens.css`](design-tokens/tokens.css) is the canonical generated CSS output.
-- [`examples/example-token-output.css`](examples/example-token-output.css) is a minimal illustrative sample, not a duplicate of the generated file.
-- [`examples/example-component-spec.md`](examples/example-component-spec.md) shows how component guidance should be written.
+## Related architecture
 
-## What good looks like
+- [Growth Architecture OS](https://github.com/silvermanjared-web/growth-architecture-os)
+- [AI Operating System Reference](https://github.com/silvermanjared-web/growth-architecture-os/tree/main/04-ai-systems/ai-operating-system-reference)
+- [AI Context & Design System](https://github.com/silvermanjared-web/brand-context-system)
 
-A strong implementation should make it easy to answer:
+## IP and usage
 
-- What colors, spacing, typography, and radius values should be used?
-- Which tokens are semantic versus raw values?
-- What does a button, card, hero, or form need to look and feel like?
-- Which assets are approved?
-- What should Claude or another AI tool inspect before generating code?
-- What should a human reviewer check before shipping?
+This repository remains public for professional review and historical portfolio context. It is not licensed for commercial reuse, resale, model training, or derivative productization without permission.
 
-## Who this is for
-
-This repo is useful for:
-
-- growth leaders building landing-page systems
-- designers translating brand direction into reusable UI language
-- marketers using AI tools for design and front-end acceleration
-- engineers needing lightweight brand implementation rules
-- consultants packaging a client brand into a repeatable build system
-
-## Related repos
-
-This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
-
-This repository turns approved brand direction into reusable implementation rules. The [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate) governs a different handoff: turning private canonical work into a reviewed public derivative through privacy scanning, explicit exclusions, and drift checks. Together they show that both design handoff and publication handoff need controlled boundaries; this repository is not claimed to be generated from private source.
-
-Shared terminology: [Common Language](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/common-language.md).
-
-- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
-- [`brand-context-system`](https://github.com/silvermanjared-web/brand-context-system)
-- [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate)
-
-## Licensing and reuse
-
-This repo is public for professional review and portfolio context. The package is intentionally marked `private` and `UNLICENSED`, which means it is not published as a package and is not offered as open-source software for reuse without permission.
-
-Usage and rights: see [USAGE.md](USAGE.md).
-
-## What this demonstrates
-
-This repo shows a practical tactic I use often: turn scattered brand, design, and front-end context into a structured operating layer that can be reused by humans and AI tools.
-
-It is not just storage. It is a system for making brand-consistent execution easier.
-
-Part of the [Jared Silverman growth portfolio](https://github.com/silvermanjared-web) — see also [Brand Context System](https://github.com/silvermanjared-web/brand-context-system) for the intake layer.
+See [USAGE.md](USAGE.md).
